@@ -78,9 +78,9 @@ namespace EncriptarTexto
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(148, 191);
+            this.button1.Location = new System.Drawing.Point(136, 197);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.TabIndex = 4;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@ namespace EncriptarTexto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 311);
+            this.ClientSize = new System.Drawing.Size(334, 261);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
