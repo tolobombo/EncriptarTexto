@@ -66,6 +66,10 @@ namespace EncriptarTexto
             //por cada letra que va recibiendo la compara y la intercambia por la letra asignada
             //concatenando cada letra en un string para devolver el texto junto.
 
+            if (letra == " ")
+            {
+                output = output + "Æ";
+            }
             if (letra == "A")
             {
                 output = output + "K";
@@ -178,6 +182,10 @@ namespace EncriptarTexto
 
         public void desencriptar(string letra)
         {
+            if (letra == "Æ")
+            {
+                output = output + " ";
+            }
             if (letra == "K")
             {
                 output = output + "A";
