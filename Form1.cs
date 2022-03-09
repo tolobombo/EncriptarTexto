@@ -35,7 +35,6 @@ namespace EncriptarTexto
             }
 
             txt2.Text = output;
-            //txt1.Text = "";
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -50,7 +49,6 @@ namespace EncriptarTexto
             }
 
             txt2.Text = output;
-            //txt1.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -179,7 +177,6 @@ namespace EncriptarTexto
                 output = output + "S";
             }
         }
-
         public void desencriptar(string letra)
         {
             if (letra == "Æ")
