@@ -29,6 +29,7 @@ namespace EncriptarTexto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@ namespace EncriptarTexto
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txt1
@@ -51,14 +53,14 @@ namespace EncriptarTexto
             // 
             this.txt2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(88, 149);
+            this.txt2.Location = new System.Drawing.Point(88, 135);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(200, 26);
             this.txt2.TabIndex = 1;
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(88, 79);
+            this.btn1.Location = new System.Drawing.Point(88, 69);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(100, 35);
             this.btn1.TabIndex = 2;
@@ -68,7 +70,7 @@ namespace EncriptarTexto
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(188, 79);
+            this.btn2.Location = new System.Drawing.Point(188, 69);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(100, 35);
             this.btn2.TabIndex = 3;
@@ -78,7 +80,7 @@ namespace EncriptarTexto
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(136, 197);
+            this.button1.Location = new System.Drawing.Point(136, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.TabIndex = 4;
@@ -89,7 +91,9 @@ namespace EncriptarTexto
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 20);
@@ -99,18 +103,66 @@ namespace EncriptarTexto
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 152);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(25, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Salida:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.Items.AddRange(new object[] {
+            "[Abecedario]",
+            "Æ = \" \"",
+            "A = K",
+            "B = D",
+            "C = F",
+            "D = J",
+            "E = N",
+            "F = R",
+            "G = B",
+            "H = C",
+            "I = G",
+            "J = L",
+            "K = X",
+            "L = Z",
+            "M = Y",
+            "N = A",
+            "Ñ = V",
+            "O = Q",
+            "P = I",
+            "Q = E",
+            "R = M ",
+            "S = O",
+            "T = P",
+            "U = T",
+            "V = W",
+            "W = U",
+            "X = Ñ",
+            "Y = H",
+            "Z = S"});
+            this.comboBox1.Location = new System.Drawing.Point(124, 234);
+            this.comboBox1.MaxDropDownItems = 15;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Text = "[Abecedario]";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 261);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = global::EncriptarTexto.Properties.Resources.img;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(334, 287);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -118,7 +170,9 @@ namespace EncriptarTexto
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -138,6 +192,7 @@ namespace EncriptarTexto
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
